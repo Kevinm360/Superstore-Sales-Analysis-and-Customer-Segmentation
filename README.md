@@ -37,15 +37,15 @@ Requirements:
 
    	 	  -Total Sales by State
    		  -Top 5 Products by Total Sales
-    		-Top 4 Years by Total Sales
-    		-RFM Analysis
+    		  -Top 4 Years by Total Sales
+    		  -RFM Analysis
 
 4. Run python market2.py
 	This script will perform additional analyses and present a dashboard:
 
    		 -Profit by Product Category
    		 -Monthly Sales Trend
-       -Customer Segmentation Analysis
+                 -Customer Segmentation Analysis
    		 -Region-wise Sales Performance
    		 -Discount Impact on Sales and Profit
 
