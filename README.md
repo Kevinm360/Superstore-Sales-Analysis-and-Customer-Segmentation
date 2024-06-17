@@ -25,6 +25,8 @@ Requirements:
     Gitbash
 
 #HOW TO RUN
+
+
 1.0 MySQL Database Setup
     	Copy and Paste the sql script into Mysql
 
