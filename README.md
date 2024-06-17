@@ -27,13 +27,13 @@ Requirements:
 #HOW TO RUN
 
 
-1.0 MySQL Database Setup
+1. MySQL Database Setup
     	Copy and Paste the sql script into Mysql
 
-2 Install the required libraries 
+2. Install the required libraries 
 	pip install pandas mysql-connector-python plotly dash mlxtend
 
-3.Open Gitbash and run python database.py
+3. Open Gitbash and run python database.py
 
 	-This script will perform the following analyses:
 
