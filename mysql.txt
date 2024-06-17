@@ -1,0 +1,36 @@
+CREATE DATABASE IF NOT EXISTS retail_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE retail_db;
+
+DROP TABLE IF EXISTS Invoices;
+
+CREATE TABLE Invoices (
+    `Row_ID` INT,
+    `Order_ID` VARCHAR(20),
+    `Order_Date` DATE,
+    `Ship_Date` DATE,
+    `Ship_Mode` VARCHAR(50),
+    `Customer_ID` VARCHAR(20),
+    `Customer_Name` VARCHAR(100),
+    `Segment` VARCHAR(50),
+    `Country` VARCHAR(50),
+    `City` VARCHAR(50),
+    `State` VARCHAR(50),
+    `Postal_Code` VARCHAR(20),
+    `Region` VARCHAR(50),
+    `Product_ID` VARCHAR(20),
+    `Category` VARCHAR(50),
+    `Sub_Category` VARCHAR(50),
+    `Product_Name` VARCHAR(255),
+    `Sales` FLOAT,
+    `Quantity` INT,
+    `Discount` FLOAT,
+    `Profit` FLOAT
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+LOAD DATA INFILE 'C:/dataset/superstore.csv'
+INTO TABLE Invoices
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS
+(Row_ID, Order_ID, Order_Date, Ship_Date, Ship_Mode, Customer_ID, Customer_Name, Segment, Country, City, State, Postal_Code, Region, Product_ID, Category, Sub_Category, Product_Name, Sales, Quantity, Discount, Profit);
